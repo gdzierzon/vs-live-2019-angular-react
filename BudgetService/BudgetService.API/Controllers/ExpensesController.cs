@@ -34,10 +34,12 @@ namespace BudgetService.API.Controllers
         {
             int startPage = page - 1;
             int skip = startPage * size;
-            return await _context.Expenses
+            var expenses = await _context.Expenses
                 .Skip(skip)
                 .Take(size)
                 .ToListAsync();
+
+            return expenses;
         }
 
         // GET: api/Expenses/5

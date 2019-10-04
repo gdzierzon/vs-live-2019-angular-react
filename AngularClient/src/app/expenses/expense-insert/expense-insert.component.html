@@ -1,4 +1,4 @@
-<h2>Add category</h2>
+<h2>Add expense</h2>
 
   <fieldset>  
       <div class="form-group row">
@@ -10,7 +10,7 @@
         </div>
       </div> 
       <div class="form-group row">
-        <label for="category" class="col-sm-2 col-form-label">User</label>
+        <label for="category" class="col-sm-2 col-form-label">Category</label>
         <div class="col-sm-10">
           <select class="form-control" [(ngModel)]="expense.categoryId">
             <option *ngFor="let category of categories" [value]="category.categoryId">{{category.title}}</option>

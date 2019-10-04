@@ -15,7 +15,6 @@ export class UsersComponent implements OnInit {
   ngOnInit() {
     this.getUsers();
   }
-
   getUsers() {
 
     this.userService.getUsers()
@@ -26,5 +25,4 @@ export class UsersComponent implements OnInit {
         (error) => console.log(error)
       );
   }
-
 }
